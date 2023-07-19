@@ -13,3 +13,17 @@ Moreover, the project has been implemented using the Page Object Model (POM) des
 
 
 The app has been designed to be scalable and easy to maintain to keep up with website functionality changes. It can be used as a model of what a robust automation testing suite should look like while also giving a clear idea of how to improve a testing suite's quality to improve its success rate.
+
+
+
+## Cart Feature Preview
+![CartFeature](https://github.com/MahmoudG-Kotp/AmazonAutomationTest/assets/31800978/99fad5b7-140b-4b98-a9f0-3a0de1ebfb6b)
+
+## Report
+![Reports](https://github.com/MahmoudG-Kotp/AmazonAutomationTest/assets/31800978/fd97ce9c-77e0-454b-ab59-33ec825e7367)
+
+### Files
+[HTML Reports!](https://github.com/MahmoudG-Kotp/AmazonAutomationTest/blob/master/target/cucumber-html-reports/overview-features.html)
+
+
+[Overview Report!](https://github.com/MahmoudG-Kotp/AmazonAutomationTest/blob/master/target/cucumber.html)
