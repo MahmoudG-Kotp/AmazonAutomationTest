@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>MDI Automation Task Report</td>
+        <td>1</td>
+      <td>19 Jul 2023, 20:30</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">mdi_automation_task.Hooks.closeBrowser()</td>
+              <td>5</td>
+              <td class="duration" data-value="2150232520">2.150</td>
+              <td class="duration" data-value="2150232520">2.158</td>
+              <td class="duration" data-value="10751162600">10.751</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.Hooks.navigateToHomePage()</td>
+              <td>5</td>
+              <td class="duration" data-value="1805492780">1.805</td>
+              <td class="duration" data-value="1805492780">1.910</td>
+              <td class="duration" data-value="9027463900">9.027</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.Hooks.openBrowser()</td>
+              <td>5</td>
+              <td class="duration" data-value="1039137620">1.039</td>
+              <td class="duration" data-value="1039137620">1.873</td>
+              <td class="duration" data-value="5195688100">5.195</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D01_Login.continueButtonClicked()</td>
+              <td>1</td>
+              <td class="duration" data-value="405426100">0.405</td>
+              <td class="duration" data-value="405426100">0.405</td>
+              <td class="duration" data-value="405426100">0.405</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D01_Login.loginNotProceedingDueToTheNonExistenceOfTheAccount()</td>
+              <td>1</td>
+              <td class="duration" data-value="41037700">0.041</td>
+              <td class="duration" data-value="41037700">0.041</td>
+              <td class="duration" data-value="41037700">0.041</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D01_Login.navigateToLoginPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="729694100">0.729</td>
+              <td class="duration" data-value="729694100">0.729</td>
+              <td class="duration" data-value="729694100">0.729</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D01_Login.userEnterDataAsEmail(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="91264100">0.091</td>
+              <td class="duration" data-value="91264100">0.091</td>
+              <td class="duration" data-value="91264100">0.091</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D02_AddToCart.clickOnAllTab()</td>
+              <td>1</td>
+              <td class="duration" data-value="137130800">0.137</td>
+              <td class="duration" data-value="137130800">0.137</td>
+              <td class="duration" data-value="137130800">0.137</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D02_AddToCart.clickOnThe1stProduct()</td>
+              <td>1</td>
+              <td class="duration" data-value="2125900300">2.125</td>
+              <td class="duration" data-value="2125900300">2.125</td>
+              <td class="duration" data-value="2125900300">2.125</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D02_AddToCart.clickOnThe2ndCategory()</td>
+              <td>1</td>
+              <td class="duration" data-value="81301600">0.081</td>
+              <td class="duration" data-value="81301600">0.081</td>
+              <td class="duration" data-value="81301600">0.081</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D02_AddToCart.clickOnThe2ndItem()</td>
+              <td>1</td>
+              <td class="duration" data-value="2970234900">2.970</td>
+              <td class="duration" data-value="2970234900">2.970</td>
+              <td class="duration" data-value="2970234900">2.970</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D02_AddToCart.correctItemsAreAddedToTheCart()</td>
+              <td>1</td>
+              <td class="duration" data-value="128716200">0.128</td>
+              <td class="duration" data-value="128716200">0.128</td>
+              <td class="duration" data-value="128716200">0.128</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D02_AddToCart.goToTodayIsDeals()</td>
+              <td>1</td>
+              <td class="duration" data-value="1633361900">1.633</td>
+              <td class="duration" data-value="1633361900">1.633</td>
+              <td class="duration" data-value="1633361900">1.633</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D02_AddToCart.letQuantityEqualsTwo()</td>
+              <td>1</td>
+              <td class="duration" data-value="306253200">0.306</td>
+              <td class="duration" data-value="306253200">0.306</td>
+              <td class="duration" data-value="306253200">0.306</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D02_AddToCart.navigateToTheCartPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="1679234600">1.679</td>
+              <td class="duration" data-value="1679234600">1.679</td>
+              <td class="duration" data-value="1679234600">1.679</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D02_AddToCart.pressAddToCartButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="1166726400">1.166</td>
+              <td class="duration" data-value="1166726400">1.166</td>
+              <td class="duration" data-value="1166726400">1.166</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D03_Authentication.clickOnYourAddresses()</td>
+              <td>1</td>
+              <td class="duration" data-value="798476800">0.798</td>
+              <td class="duration" data-value="798476800">0.798</td>
+              <td class="duration" data-value="798476800">0.798</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D03_Authentication.clickOnYourLists()</td>
+              <td>1</td>
+              <td class="duration" data-value="810295200">0.810</td>
+              <td class="duration" data-value="810295200">0.810</td>
+              <td class="duration" data-value="810295200">0.810</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D03_Authentication.clickOnYourOrders()</td>
+              <td>1</td>
+              <td class="duration" data-value="913505300">0.913</td>
+              <td class="duration" data-value="913505300">0.913</td>
+              <td class="duration" data-value="913505300">0.913</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D03_Authentication.hoverOnSignInAndAccountLists()</td>
+              <td>3</td>
+              <td class="duration" data-value="134521266">0.134</td>
+              <td class="duration" data-value="134521266">0.142</td>
+              <td class="duration" data-value="403563800">0.403</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D03_Authentication.listIntroDisplayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="24931100">0.024</td>
+              <td class="duration" data-value="24931100">0.024</td>
+              <td class="duration" data-value="24931100">0.024</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">mdi_automation_task.step_definitions.D03_Authentication.loginPageDisplayed()</td>
+              <td>2</td>
+              <td class="duration" data-value="31426300">0.031</td>
+              <td class="duration" data-value="31426300">0.034</td>
+              <td class="duration" data-value="62852600">0.062</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>22</td>
+            <td>37</td>
+            <td class="duration">1.067</td>
+            <td class="duration">10.751</td>
+            <td class="duration">39.484</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
