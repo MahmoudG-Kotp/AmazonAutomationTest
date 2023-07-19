@@ -19,7 +19,7 @@ The app has been designed to be scalable and easy to maintain to keep up with we
 ## Cart Feature Preview
 ![CartFeature](https://github.com/MahmoudG-Kotp/AmazonAutomationTest/assets/31800978/99fad5b7-140b-4b98-a9f0-3a0de1ebfb6b)
 
-## Report
+## Cucumber Reports
 ![Reports](https://github.com/MahmoudG-Kotp/AmazonAutomationTest/assets/31800978/fd97ce9c-77e0-454b-ab59-33ec825e7367)
 
 ### Files
