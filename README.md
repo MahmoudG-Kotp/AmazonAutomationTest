@@ -1,4 +1,4 @@
-# Amazon Automation Test
+#Amazon Automation Test
 
 Amazon Automation Test is an automated software test application that has been developed as an interview task for the MDI corporation. The app is designed to apply test scenarios on the Amazon EG website https://www.amazon.eg/ by utilizing Selenium WebDriver, Cucumber BDD framework, and the Page Object Model (POM) design pattern.
 
