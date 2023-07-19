@@ -20,8 +20,8 @@ The app has been designed to be scalable and easy to maintain to keep up with we
      2- Make sure that your Chrome browser's version is up to 115
      3- Open the Maven tab from the top-right corner
      4- Select mdi_automation_task >> Lifecycle
-     4- (Optional) Click on Clean to remove any previous reports
-     5- Click on verify
+     5- (Optional) Click on Clean to remove any previous reports
+     6- Click on verify
 
 ## Cart Feature Preview
 ![CartFeature](https://github.com/MahmoudG-Kotp/AmazonAutomationTest/assets/31800978/99fad5b7-140b-4b98-a9f0-3a0de1ebfb6b)
