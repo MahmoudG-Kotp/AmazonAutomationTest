@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="40.857" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="F01_Login | Login to non-existing account" name="Verify that user cannot login with valid but not registered email" time="7.974">
+<system-out><![CDATA[
+Given Navigate to the login page............................................passed
+When User enter data "dummy_email@yahoo.com" as email.......................passed
+And Continue button clicked.................................................passed
+Then Login not proceeding due to the non-existence of the account...........passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Cart | Add product to cart" name="Verify that items are added to cart correctly" time="15.822">
+<system-out><![CDATA[
+When Click on All tab.......................................................passed
+And Go to Today's Deals.....................................................passed
+* Click on the second Category..............................................passed
+* Click on the first product on this category...............................passed
+* Click on the second item in this product..................................passed
+* Let quantity equals two...................................................passed
+* Press add to cart button..................................................passed
+* Navigate to the cart page.................................................passed
+Then Correct items are added to the cart....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Authentication | Login required to display specific data" name="Verify that you cannot see “Your Orders” page if you are not logged in" time="5.694">
+<system-out><![CDATA[
+When Hover on Hello, sign in Account & Lists................................passed
+And CLick on Your orders....................................................passed
+Then login page displayed...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Authentication | Login required to display specific data" name="Verify that you cannot see “Your Addresses” page if you are not logged in" time="5.55">
+<system-out><![CDATA[
+When Hover on Hello, sign in Account & Lists................................passed
+And CLick on Your Addresses.................................................passed
+Then login page displayed...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Authentication | Login required to display specific data" name="Verify that you can see “Your Lists” intro screen if you are not logged in" time="5.658">
+<system-out><![CDATA[
+When Hover on Hello, sign in Account & Lists................................passed
+And CLick on Your Lists.....................................................passed
+Then List intro displayed...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

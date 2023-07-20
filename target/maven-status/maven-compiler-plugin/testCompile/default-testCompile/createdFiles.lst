@@ -1,0 +1,12 @@
+mdi_automation_task\pages\P03_Categories.class
+mdi_automation_task\pages\P05_Cart.class
+mdi_automation_task\step_definitions\D02_AddToCart.class
+mdi_automation_task\step_definitions\D03_Authentication.class
+mdi_automation_task\Hooks$Browser.class
+mdi_automation_task\type_defs\Product.class
+mdi_automation_task\test_runners\Runners.class
+mdi_automation_task\pages\P01_Home.class
+mdi_automation_task\pages\P04_Product.class
+mdi_automation_task\pages\P02_Login.class
+mdi_automation_task\step_definitions\D01_Login.class
+mdi_automation_task\Hooks.class
