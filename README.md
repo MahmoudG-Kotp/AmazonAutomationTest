@@ -26,7 +26,7 @@ The app has been designed to be scalable and easy to maintain to keep up with we
 > **Note**
 > If there are failures in scenarios you can find them in the test_outouts file
 
-## Cart Feature Preview
+## [Project Preview](https://youtu.be/zVi6UGlr1dk)
 ![CartFeature](https://github.com/MahmoudG-Kotp/AmazonAutomationTest/assets/31800978/99fad5b7-140b-4b98-a9f0-3a0de1ebfb6b)
 
 ## [Cucumber Reports](https://github.com/MahmoudG-Kotp/AmazonAutomationTest/blob/master/target/cucumber-html-reports/overview-features.html)
