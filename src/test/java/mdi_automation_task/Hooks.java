@@ -2,11 +2,15 @@ package mdi_automation_task;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import mdi_automation_task.pages.P01_Home;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 import java.util.ArrayList;
 
@@ -23,7 +27,17 @@ public class Hooks {
         Browser.navigateTo(P01_Home.HOME_URL);
     }
 
-    @After
+    @After(order = 1)
+    public void takeScreenshotOnFailure(Scenario runningScenario) {
+        //Currently running scenario will be passed automatically from the TestNG
+        if (runningScenario.isFailed()) {
+            //Convert driver to takesSS interface to call ss function and output it to bytes
+            byte[] source = ((TakesScreenshot) Browser.getDriver()).getScreenshotAs(OutputType.BYTES);
+            runningScenario.attach(source, "image/png", "Failure Screenshot at >> " + runningScenario.getName());
+        }
+    }
+
+    @After(order = 0)
     public void closeBrowser() throws InterruptedException {
         Browser.quit();
     }
